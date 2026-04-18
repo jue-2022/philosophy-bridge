@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "什么是自由",
+      "content": "面对就是",
+      "lang": "zh",
+      "timestamp": "2026-04-18T16:59:39.860794",
+      "replies": [
+        {
+          "id": 1,
+          "content": "爱吧",
+          "lang": "zh",
+          "timestamp": "2026-04-18T17:01:59.774205",
+          "replies": []
+        }
+      ]
+    }
+  ],
+  "next_id": 2
+}

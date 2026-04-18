@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哲学思辨桥 · 世界哲学交流平台</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌍 哲学思辨桥 · PhiloBridge</h1>
+        <p>跨语言 · 跨传统 · 思辨对话</p>
+    </header>
+
+    <main>
+        <div class="post-form">
+            <h2>发表新论题</h2>
+            <input type="text" id="postTitle" placeholder="标题 (例：什么是 '自由'？)" />
+            <textarea id="postContent" rows="4" placeholder="用你的母语写下哲学思考..."></textarea>
+            <select id="postLang">
+                <option value="zh">中文</option>
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="ja">日本語</option>
+                <option value="ar">العربية</option>
+            </select>
+            <button id="submitPost">发布论题</button>
+        </div>
+
+        <div class="display-settings">
+            <label>🌐 我的显示语言：</label>
+            <select id="displayLang">
+                <option value="zh">中文</option>
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="ja">日本語</option>
+                <option value="ar">العربية</option>
+            </select>
+            <span class="info">※ 所有内容将自动翻译至你的显示语言</span>
+        </div>
+
+        <div id="postsContainer" class="posts-container">
+            <div class="loading">加载中...</div>
+        </div>
+    </main>
+
+    <!-- 模态框：显示哲学术语解析 -->
+    <div id="conceptModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="conceptResult">解析中...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
