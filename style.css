@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI', 'Noto Sans', sans-serif;
+}
+body {
+    background: #f5f2eb;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+header h1 {
+    color: #2c3e2f;
+    font-size: 2.2rem;
+}
+.post-form {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+.post-form input, .post-form textarea, .post-form select {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+button {
+    background: #2c6e2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+button:hover {
+    background: #1f4f21;
+}
+.display-settings {
+    background: #e8e0d3;
+    padding: 12px 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.post-card {
+    background: white;
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.1s;
+}
+.post-title {
+    font-size: 1.6rem;
+    margin: 0 0 8px 0;
+    color: #1e3a2f;
+}
+.post-meta {
+    font-size: 0.8rem;
+    color: #6b5e4a;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.post-content {
+    font-size: 1rem;
+    line-height: 1.5;
+    background: #faf8f4;
+    padding: 16px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.concept-btn {
+    background: #5e6b8f;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+.reply-form {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+.reply-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+}
+.reply-item {
+    background: #f9f7f2;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 18px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 28px;
+    width: 80%;
+    max-width: 600px;
+}
+.close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+.loading {
+    text-align: center;
+    color: #6c5b4b;
+}
